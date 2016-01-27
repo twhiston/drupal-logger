@@ -6,12 +6,12 @@
  * Time: 16:48
  */
 
-namespace Drupal\twhiston\WatchdogLogger;
+namespace Drupal\twhiston\Logger;
 
 use Psr\Log\AbstractLogger;
 
 
-class WatchdogLogger extends AbstractLogger {
+class Watchdog extends AbstractLogger {
 
   public function log($level, $message, array $context = array()) {
 

@@ -1,6 +1,6 @@
 {
-    "name": "drupal/twhiston/watchdoglogger",
-    "description": "Psr-3 compatible wrapper for Drupal Watchdog",
+    "name": "Drupal/twhiston/Logger",
+    "description": "Psr-3 compatible wrapper for Drupal Logging",
     "authors": [
         {
             "name": "Tom W",
@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Drupal\\twhiston\\WatchdogLogger\\": "src/"
+            "Drupal\\twhiston\\Logger\\": "src/"
         }
     }
 }
