@@ -1,5 +1,5 @@
 {
-    "name": "twhiston/watchdog-logger",
+    "name": "drupal/twhiston/watchdog-logger",
     "description": "Psr-3 compatible wrapper for Drupal Watchdog",
     "authors": [
         {
