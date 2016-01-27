@@ -11,7 +11,7 @@ namespace Drupal\twhiston\Logger;
 use Psr\Log\AbstractLogger;
 
 
-class Watchdog extends AbstractLogger {
+class WatchdogLogger extends AbstractLogger {
 
   public function log($level, $message, array $context = array()) {
 

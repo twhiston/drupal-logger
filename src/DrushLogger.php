@@ -11,8 +11,8 @@ namespace Drupal\twhiston\Logger;
 use Psr\Log\AbstractLogger;
 
 
-class Drush extends AbstractLogger {
-  
+class DrushLogger extends AbstractLogger {
+
   public function log($level, $message, array $context = array()) {
     // TODO: Implement log() method.
     $message = dt($message, $context);
