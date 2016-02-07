@@ -9,14 +9,7 @@ Require this project in your composer.json
 #!json
 {
 "require": {
-    "Drupal/twhiston/Logger": "dev-master",
-  },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url":  "https://bitbucket.org/twhiston/drupallogger.git"
-    }
-  ]
+    "twhiston/drupal-logger": "dev-master",
+  }
 }
 ```
-
