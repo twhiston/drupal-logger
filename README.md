@@ -13,3 +13,5 @@ Require this project in your composer.json
   }
 }
 ```
+
+If you pass context called 'watchdog_context' it will be used for the watchdog module name, otherwise 'Watchdog Logged' will be used

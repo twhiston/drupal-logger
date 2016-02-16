@@ -13,6 +13,8 @@ use Psr\Log\AbstractLogger;
 
 class WatchdogLogger extends AbstractLogger {
 
+
+
   public function log($level, $message, array $context = array()) {
 
     $type = WATCHDOG_DEBUG ;
@@ -43,7 +45,13 @@ class WatchdogLogger extends AbstractLogger {
         $type = WATCHDOG_DEBUG;
         break;
     }
-    watchdog('OUR MODULE',$message,$context,$type);
+    //Get our module context
+    $mname = 'Watchdog Logger';
+    if (array_key_exists('watchdog_context',$context)){
+      $mname = $context['watchdog_context'];
+      unset($context['watchdog_context']);//We dont want to pass this through to watchdog
+    }
+    watchdog($mname,$message,$context,$type);
   }
 
 }
